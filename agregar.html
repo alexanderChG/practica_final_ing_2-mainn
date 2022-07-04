@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Agregar Tarea</title>
+    <link rel="stylesheet" type="text/css" href="styleagregar.css">
+</head>
+
+<body>
+    <a href="index.php"><button class="l">Home</button></a>
+    <a href="logout.php"><button>Cerrar Sesion</button></a>
+    <br/><br/>
+    <fieldset>
+        <legend><h1>Agregar Tarea</h1></legend>
+        <form action="agregar.php" method="post" name="form1">
+            <table width="100%" border=0>
+                    <tr>
+                        <td><h1>Nueva Tarea</h1></td>
+                        <td><h1>Clasificacion</h1></td>
+                        <td><h1>Vence</h1></td>
+                        <td><h1>Accion</h1></td>
+                    </tr>
+                    <tr>
+                        <td><input class="w" type="text" name="name" placeholder="Nueva Tarea" required></td>
+                        <td><input class="w" type="text" name="clasi" placeholder="Clasificacion" required></td>
+                        <td><input class="d" type="date" name="fecha" required></td>
+                        <td><input class="r" type="submit" name="Submit" value="Agregar"></td>
+                    </tr>
+            </table>
+        </form>
+    </fieldset> 
+    <form>
+    <div class="container-clock">
+      <h2 id="time">00:00:00</h2>
+      <h2><p id="date">date</p></h2>
+  </div>
+
+  <script src="clock.js"></script>
+</form>
+</body>
+</html>
